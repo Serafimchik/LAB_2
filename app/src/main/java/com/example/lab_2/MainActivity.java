@@ -34,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         numdersAdapter = new NumdersAdapter(generateContent());
         numbersList.setAdapter(numdersAdapter);
     }
+    public void Clear_Button (View view){
+        content.clear();
+        numdersAdapter = new NumdersAdapter(content);
+        numbersList.setAdapter(numdersAdapter);
+    }
 
     private ArrayList<String> generateContent() {
         content.add("Element number ");
